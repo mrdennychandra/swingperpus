@@ -271,14 +271,25 @@ public class FormAuthor extends javax.swing.JPanel {
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
         String name = txtName.getText();
+        if (name.equals("")) {
+            JOptionPane.showMessageDialog(this, "name cannot be empty",
+                     "validation error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         String email = txtEmail.getText();
-        Date birthDate = txtBirthDate.getDate();
-        String gender = getSelection(rbGroup).getActionCommand();
-        if(name.equals("")){
-            JOptionPane.showMessageDialog(this, "name cannot be empty"
+        if(email.equals("")){
+            JOptionPane.showMessageDialog(this, "email cannot be empty"
                     ,"validation error",JOptionPane.ERROR_MESSAGE);
             return;
         }
+         if(txtBirthDate.getDate() == null){
+            JOptionPane.showMessageDialog(this, "birth date cannot be empty"
+                    ,"validation error",JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        Date birthDate = txtBirthDate.getDate();
+        String gender = getSelection(rbGroup).getActionCommand();
+
         try {
             if (isNew) {
                 Author author = new Author();

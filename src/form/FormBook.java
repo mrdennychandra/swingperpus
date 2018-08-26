@@ -253,9 +253,24 @@ public class FormBook extends javax.swing.JPanel {
     }//GEN-LAST:event_btnNewActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-// TODO add your handling code here:
+        // TODO add your handling code here:
         String title = txtTitle.getText();
+        if (title.equals("")) {
+            JOptionPane.showMessageDialog(this, "title cannot be empty",
+                     "validation error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         String isbn = txtIsbn.getText();
+        if (isbn.equals("")) {
+            JOptionPane.showMessageDialog(this, "isbn cannot be empty",
+                     "validation error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if (txtStock.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "stock cannot be empty",
+                     "validation error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         Integer stock = Integer.parseInt(txtStock.getText());
         Author author = (Author) cbAuthor.getSelectedItem();
         try {
