@@ -3,13 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Pelatihan%20Sert%20Java/crudapp/src/form/FormSearch.java</file>
-            <file>file:/E:/Pelatihan%20Sert%20Java/crudapp/src/form/BookTableModel.java</file>
-            <file>file:/E:/Pelatihan%20Sert%20Java/crudapp/src/entity/BookJpaController.java</file>
-            <file>file:/E:/Pelatihan%20Sert%20Java/crudapp/src/form/FormAuthor.java</file>
-            <file>file:/E:/Pelatihan%20Sert%20Java/crudapp/src/form/MainApp.java</file>
-            <file>file:/E:/Pelatihan%20Sert%20Java/crudapp/src/form/FormBook.java</file>
-            <file>file:/E:/Pelatihan%20Sert%20Java/crudapp/src/META-INF/persistence.xml</file>
+            <file>file:/E:/Pelatihan/Pelatihan%20Sert%20Java/crudapp/src/entity/Book.java</file>
+            <file>file:/E:/Pelatihan/Pelatihan%20Sert%20Java/crudapp/src/entity/Nota.java</file>
+            <file>file:/E:/Pelatihan/Pelatihan%20Sert%20Java/crudapp/src/entity/NotaDetail.java</file>
+            <file>file:/E:/Pelatihan/Pelatihan%20Sert%20Java/crudapp/src/entity/Author.java</file>
         </group>
     </open-files>
 </project-private>
